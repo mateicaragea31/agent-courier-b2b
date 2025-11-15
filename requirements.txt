@@ -1,15 +1,4 @@
-# --- Pentru API-urile Google (Gmail & Calendar) - Agentul 2/3 ---
-google-api-python-client
-google-auth-httplib2
-google-auth-oauthlib
-
-# --- Pentru curățarea HTML-ului din email-uri (dacă e nevoie) ---
-beautifulsoup4
-
-# --- Pentru API-ul Agentului 1 (Dispecerul) ---
 fastapi
-uvicorn[standard]
-pydantic
-
-# --- Pentru RPA (Agentul Executor - dacă va fi nevoie) ---
-# selenium
+uvicorn
+pydantic[email]
+firebase-admin
