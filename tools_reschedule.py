@@ -20,7 +20,7 @@ class RescheduleInput(BaseModel):
 #@tool(args_schema=RescheduleInput)
 def send_new_schedule(awb: str, client_phone: str, new_delivery_date: str):
     """
-    Recieves a new schedule for delivery and sends it back to the delivery service.
+    Primeste noua data de livrare, updateaza noua data de livrare, marcheaza tot procesul in memorie si notifica curierul despre noua data
     """
     logging.info(f"Rulez 'reschedule_and_notify_courier' pentru AWB: {awb} la data {new_delivery_date}")
     
@@ -35,7 +35,9 @@ def send_new_schedule(awb: str, client_phone: str, new_delivery_date: str):
         doc_ref.update({
             'status' : 'processed',
             'processed_at' : firestore.SERVER_TIMESTAMP,
-            'final_delivery_date' : new_delivery_date
+            'final_delivery_date' : new_delivery_date,
+            'awb' : awb,
+            'available_delivery_dates': firestore.DELETE_FIELD
         })
 
         try:
