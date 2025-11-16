@@ -23,8 +23,8 @@ def get_pending_deliveries():
         logging.error(f"Eroare la preluarea valorilor din Firestore. {e}")
         return []
 
+"""
 ## --- Testare ----
-
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
     logging.info("--- [MOD DE TESTARE SIMPLU PENTRU RETRIEVAL] ---")
@@ -38,3 +38,4 @@ if __name__ == "__main__":
             print(f"Sarcina {i + 1}: ID = {task_doc.id} (AWB)")
 
     logging.info("--- [MOD TESTARE INCHEIAT] ---")
+"""
