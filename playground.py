@@ -50,4 +50,4 @@ def whatsapp_reply():
 
 # Pornește serverul pe portul 5000
 if __name__ == "__main__":
-    app.run(port=5000, debug=True, use_reloader = False)
+    app.run(host="127.0.0.1", port=5001, debug=True, use_reloader = False)

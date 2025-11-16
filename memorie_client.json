@@ -5,32 +5,11 @@
             "recurrence_type": "saptamanal",
             "recurrence_interval": 1,
             "new_status": false,
-            "start_date": "2025-11-22",
-            "end_date": null
-        },
-        {
-            "recurrence_type": "saptamanal",
-            "recurrence_interval": 2,
-            "new_status": false,
-            "start_date": "2025-11-23",
+            "start_date": "2025-11-28",
             "end_date": null
         }
     ],
     "exceptii_specifice": {
-        "2025-11-21": false,
-        "2025-11-22": true,
-        "2025-12-15": false,
-        "2025-12-19": false,
-        "2025-12-17": false,
-        "2025-12-18": false,
-        "2025-12-20": false,
-        "2025-12-21": false,
-        "2025-12-16": false,
-        "2025-12-01": false,
-        "2026-01-01": false,
-        "2026-01-03": false,
-        "2025-12-02": false,
-        "2025-12-03": false,
-        "2026-01-02": false
+        "2025-11-21": false
     }
 }
