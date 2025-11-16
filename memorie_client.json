@@ -1,23 +1,15 @@
 {
-    "client_id": "07xxxxxxxx",
+    "client_id": "0769657455",
     "recurrences": [
         {
-            "type": "weekly",
-            "available": false,
-            "interval": 2,
-            "start_date": "2025-11-03"
-        },
-        {
-            "type": "weekly",
-            "available": false,
-            "interval": 1,
-            "start_date": "2025-11-03"
+            "recurrence_type": "saptamanal",
+            "recurrence_interval": 1,
+            "new_status": false,
+            "start_date": "2025-11-28",
+            "end_date": null
         }
     ],
     "exceptii_specifice": {
-        "2025-11-20": true,
-        "2025-12-25": false,
-        "2025-11-16": false,
-        "2025-11-17": false
+        "2025-11-21": false
     }
 }
