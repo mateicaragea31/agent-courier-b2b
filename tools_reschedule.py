@@ -17,7 +17,7 @@ class RescheduleInput(BaseModel):
     client_phone: str = Field(description = "NNumărul de telefon al clientului, necesar pentru a salva în istoric.")
     new_delivery_date: str = Field(description = "Data finală de livrare aleasă de client, în format YYYY-MM-DD.")
 
-#@tool(args_schema=RescheduleInput)
+@tool(args_schema=RescheduleInput)
 def send_new_schedule(awb: str, client_phone: str, new_delivery_date: str):
     """
     Primeste noua data de livrare, updateaza noua data de livrare, marcheaza tot procesul in memorie si notifica curierul despre noua data
