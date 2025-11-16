@@ -1,6 +1,4 @@
-# ... (bibliotecile google și selenium rămân) ...
-
-# --- Pentru API-ul Agentului 1 (Dispecerul) ---
 fastapi
-uvicorn[standard]
-pydantic
+uvicorn
+pydantic[email]
+firebase-admin
