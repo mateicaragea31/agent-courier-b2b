@@ -49,6 +49,9 @@ class DeliveryRequest(BaseModel):
     details: str = Field(...,
                             description="Detalii suplimentare (bloc, scară, ap, interfon).",
                             examples=["Bloc D, Scara 2, Ap. 30, Interfon 30C"])
+    nrZileDepozit: int = Field(...,
+                                description="Numarul de zile maxim in care coletul poate sta in depozit inainte sa fie returnat la furnzor.",
+                                examples=["5"])
 
 
 # --- 2. Inițializarea Aplicației FastAPI ---
