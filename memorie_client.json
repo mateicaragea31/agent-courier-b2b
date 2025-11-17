@@ -1,14 +1,6 @@
 {
     "client_id": "0769657455",
-    "recurrences": [
-        {
-            "recurrence_type": "saptamanal",
-            "recurrence_interval": 1,
-            "new_status": false,
-            "start_date": "2025-11-28",
-            "end_date": null
-        }
-    ],
+    "recurrences": [],
     "exceptii_specifice": {
         "2025-11-21": false
     }
